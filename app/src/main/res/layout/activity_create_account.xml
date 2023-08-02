@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <EditText
+        android:id="@+id/edtxtEmailCA"
+        android:layout_width="275sp"
+        android:layout_height="60sp"
+        android:layout_marginTop="52dp"
+        android:autofillHints="email"
+        android:ems="10"
+        android:gravity="center_horizontal|center_vertical"
+        android:hint="@string/enter_email"
+        android:inputType="textEmailAddress"
+        android:textColorHint="@color/material_dynamic_neutral50"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edtxtNameCA" />
+
+    <EditText
+        android:id="@+id/edtxtNameCA"
+        android:layout_width="275sp"
+        android:layout_height="60sp"
+        android:layout_marginTop="36dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:gravity="center_horizontal|center_vertical"
+        android:hint="@string/enter_name"
+        android:inputType="textPersonName"
+        android:textColorHint="@color/material_dynamic_neutral50"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/createAccountToolbar" />
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/createAccountToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/prime_blue"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:titleTextColor="@color/white" />
+
+    <Button
+        android:id="@+id/btnCreateAccountCA"
+        android:layout_width="197dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="36dp"
+        android:text="@string/create_account"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <CheckBox
+        android:id="@+id/cbAgree"
+        android:layout_width="339dp"
+        android:layout_height="187dp"
+        android:layout_marginBottom="84dp"
+        android:gravity="center"
+        android:text="@string/agree_to_terms"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/edtxtPasswordCA"
+        android:layout_width="275sp"
+        android:layout_height="60sp"
+        android:layout_marginTop="8dp"
+        android:autofillHints="password"
+        android:ems="10"
+        android:gravity="center_horizontal|center_vertical"
+        android:hint="@string/enter_password"
+        android:inputType="textPassword"
+        android:textColorHint="@color/material_dynamic_neutral50"
+        android:translationY="50sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edtxtEmailCA" />
+
+    <EditText
+        android:id="@+id/edtxtRetypePassword"
+        android:layout_width="275sp"
+        android:layout_height="60sp"
+        android:layout_marginTop="36dp"
+        android:autofillHints="password"
+        android:ems="10"
+        android:gravity="center_horizontal|center_vertical"
+        android:hint="@string/confirm_password"
+        android:inputType="textPassword"
+        android:textColorHint="@color/material_dynamic_neutral50"
+        android:translationY="50sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edtxtPasswordCA" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,126 @@
+<resources>
+    <string name="app_name">M_Expense</string>
+    <string name="Main_title">M-Expense</string>
+    <string name="login">Login</string>
+    <string name="create_account">Create Account</string>
+    <string name="enter_email">Enter Email</string>
+    <string name="enter_password">Enter Password</string>
+    <string name="enter_name">Enter Name</string>
+    <string name="confirm_password">Retype Password</string>
+    <string name="agree_to_terms">I agree to the Terms of M-Expense</string>
+    <string name="agree">I agree</string>
+    <string name="denied_location">Location permission denied!</string>
+    <string name="current_location_is">Current location is: </string>
+    <string name="current_lat_lon">Lat: %1$s \nLon: %2$s</string>
+    <string name="add_trip">Add Trip</string>
+    <string name="test_email">Joe@joe.co.uk</string>
+    <string name="test_password">abc123</string>
+    <string name="add_a_trip">Add a Trip</string>
+    <string name="select_date">Select Date</string>
+    <string name="date_formatted">%1$s/%2$s/%3$s</string>
+    <string name="select_icon">Select Icon</string>
+
+    <string name="radio_yes">Yes</string>
+    <string name="radio_no">No</string>
+    <string name="risk_a">Does this trip require a risk assessment?</string>
+    <string name="cd_date_text">Date selection display</string>
+    <string name="auto_location">Use Current Location?</string>
+    <string name="location_formatted">%1$s, %2$s, %3$s, %4$s</string>
+    <string name="time_formatted">%1$s":"%2$s</string>
+
+
+    <string name="home">Home</string>
+    <string name="yes_risk">Requires Risk Assessment</string>
+    <string name="no_risk">Does not require Risk Assessment</string>
+    <string name="title_activity_test">TestActivity</string>
+
+    <string name="trip_name">Trip Name: </string>
+    <string name="date">Date: </string>
+    <string name="destination">Destination: </string>
+    <string name="description">Description: </string>
+    <string name="risk">Risk: </string>
+
+    <string name="trip_name_hint">Trip Name</string>
+    <string name="destination_hint">Destination</string>
+    <string name="description_hint">Description (optional)</string>
+    <string name="date_hint">Date</string>
+    <string name="risk_hint">Risk</string>
+
+    <string name="view_trips">View Trips</string>
+    <string name="ex_type">Type: </string>
+    <string name="ex_amount">Amount: </string>
+    <string name="ex_time">Time: </string>
+    <string name="ex_comments">Comments: </string>
+
+    <string name="ex_type_hint">Type</string>
+    <string name="ex_amount_hint">Amount</string>
+    <string name="ex_time_hint">Time</string>
+    <string name="use_current_time">Use Current Time?</string>
+    <string name="ex_comments_hint">Comments</string>
+    <string name="add_expense">Add Expense</string>
+
+    <string name="view_expenses">View trip expenses</string>
+    <string name="edit_trip_details">Edit trip details</string>
+    <string name="delete_trip">Delete trip</string>
+
+    <string name="update_trip">Update Trip Details</string>
+    <string name="trip_options">Trip Options</string>
+
+    <string name="total_expenses">Total Expenses:</string>
+    <string name="pick_time">Select time</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_profile">Profile</string>
+    <string name="menu_expense">Expenses</string>
+    <string name="menu_trip">Trips</string>
+    <string name="menu_search">Search</string>
+    <string name="update_details">Update Details</string>
+
+    <string name="edit_name">Edit Name</string>
+    <string name="edit_email">Edit Email</string>
+    <string name="edit_password">Edit Password</string>
+    <string name="your_profile">Your Profile</string>
+
+    <string name="profile_information">Please note that changing details will require a re-log.</string>
+
+    <string name="welcome_message">Welcome %1$s</string>
+    <string name="expense_count">Total Expenses\n\n %1$s</string>
+    <string name="expense_sum">Sum of Expenses\n\n £%1$s</string>
+    <string name="trip_count">Recorded Trips\n\n %1$s </string>
+    <string name="average_expense">Average Expense\n\n £%1$s</string>
+
+    <string name="delete_account">Delete Account</string>
+    <string name="update_expense">Update Expense</string>
+    <string name="edit_expense">Edit Expense</string>
+    <string name="delete_expense">Delete Expense</string>
+    <string name="budget">Budget</string>
+    <string name="budget_semi">Budget: </string>
+    <string name="trip_details">Displaying expenses for the trip name:\n %1$s</string>
+    <string name="expense_options">Expense Options</string>
+    <string name="search_title">Search</string>
+    <string name="add_trip_here">Start by adding a trip here</string>
+    <string name="cd_spinner">Dropdown box allowing user to search via different parameters</string>
+    <string name="cd_search_input">A search box allowing a user to find a trip using a search term</string>
+    <string name="search_input_edittext">Enter a search term</string>
+    <string name="m_expense_logo">M-expense Logo</string>
+    <string name="poundsign">£%1$s</string>
+    <string name="trips_country_flag">Trips country flag</string>
+
+    <string name="budget_calculate">Your current budget is £%1$s</string>
+
+
+
+
+    <string-array name="search_filter">
+            <item>Trip Name</item>
+            <item>Destination</item>
+            <item>Date</item>
+    </string-array>
+
+    <string-array name="icon_selection">
+        <item>Travel</item>
+        <item>Food</item>
+        <item>Hotel</item>
+    </string-array>
+
+</resources>

@@ -1,0 +1,115 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/lo_linear"
+    android:layout_width="411dp"
+    android:layout_height="160dp"
+    android:orientation="vertical"
+    tools:context=".ViewTripActivity">
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardTrip"
+        android:layout_width="match_parent"
+        android:layout_height="155dp"
+        app:cardBackgroundColor="@color/white"
+        app:cardCornerRadius="0dp">
+
+        <ImageView
+            android:id="@+id/imgTripFlag"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_gravity="center|end"
+            android:contentDescription="@string/trips_country_flag"
+            android:translationX="-30dp"
+            android:translationY="-5dp"
+            tools:srcCompat="@tools:sample/avatars" />
+
+        <TableLayout
+            android:id="@+id/tblTrip"
+            android:layout_width="312dp"
+            android:layout_height="155dp"
+            android:padding="5sp">
+
+            <TableRow
+                android:layout_width="304dp"
+                android:layout_height="120sp">
+
+                <TextView
+                    android:id="@+id/label_tripName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:fontFamily="@font/roboto_regular"
+                    android:paddingStart="4dp"
+                    android:paddingEnd="12dp"
+                    android:text="@string/trip_name"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/tvTripName"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start"
+                    android:fontFamily="@font/roboto_light"
+                    android:paddingTop="1dp"
+                    android:textColor="@color/teal_700"
+                    android:textSize="16sp" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/label_tripDate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:fontFamily="@font/roboto_regular"
+                    android:paddingStart="4dp"
+                    android:paddingEnd="12dp"
+                    android:text="@string/date"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/tvTripDate"
+                    android:layout_width="200dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="start"
+                    android:fontFamily="@font/roboto_light"
+                    android:paddingTop="1dp"
+                    android:textColor="@color/teal_700" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="305dp"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/label_tripDestination"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:fontFamily="@font/roboto_regular"
+                    android:paddingStart="4dp"
+                    android:paddingEnd="12dp"
+                    android:text="@string/destination"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/tvTripDestination"
+                    android:layout_width="30dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start"
+                    android:fontFamily="@font/roboto_light"
+                    android:paddingTop="1dp"
+                    android:textColor="@color/teal_700" />
+            </TableRow>
+
+        </TableLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

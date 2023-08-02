@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center_vertical"
+    android:background="@color/light_blue">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/homeToolbar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@color/prime_blue"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:titleTextColor="@color/white" />
+
+    <TextView
+        android:id="@+id/tvUserInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:fontFamily="@font/roboto_regular"
+        android:gravity="center_horizontal"
+        android:textColor="@color/black"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toTopOf="@+id/cardView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/homeToolbar" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="360dp"
+        android:layout_height="360dp"
+        android:outlineProvider="none"
+        app:cardBackgroundColor="@color/light_blue"
+        app:layout_constraintBottom_toTopOf="@+id/btnAddTrip"
+        app:layout_constraintEnd_toEndOf="parent"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/homeToolbar">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cv4"
+            android:layout_width="175dp"
+            android:layout_height="175dp"
+            android:padding="5sp"
+            app:cardBackgroundColor="@color/prime_blue"
+            app:cardCornerRadius="10dp" >
+
+            <TextView
+                android:id="@+id/tvAverageEx"
+                android:layout_width="145dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:fontFamily="@font/roboto_regular"
+                android:gravity="center_horizontal"
+                android:paddingTop="8sp"
+                android:textColor="@color/white"
+                android:textSize="22sp" />
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cv1"
+            android:layout_width="175dp"
+            android:layout_height="175dp"
+            android:layout_gravity="bottom"
+            android:padding="5sp"
+            app:cardBackgroundColor="@color/prime_blue"
+            app:cardCornerRadius="10dp">
+
+            <TextView
+                android:id="@+id/txtExpenseCount"
+                android:layout_width="145dp"
+                android:layout_height="wrap_content"
+
+                android:layout_gravity="center_horizontal"
+                android:fontFamily="@font/roboto_regular"
+                android:gravity="center_horizontal"
+                android:paddingTop="8sp"
+                android:textColor="@color/white"
+                android:textSize="22sp" />
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cv3"
+            android:layout_width="175dp"
+            android:layout_height="175dp"
+            android:layout_gravity="end"
+            android:padding="5sp"
+            app:cardBackgroundColor="@color/prime_blue"
+            app:cardCornerRadius="10dp">
+
+            <TextView
+                android:id="@+id/txtTripCount"
+                android:layout_width="123dp"
+                android:layout_height="wrap_content"
+
+                android:layout_gravity="center_horizontal"
+                android:fontFamily="@font/roboto_regular"
+                android:gravity="center_horizontal"
+                android:paddingTop="8sp"
+                android:textColor="@color/white"
+                android:textSize="22sp" />
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cv2"
+            android:layout_width="175dp"
+            android:layout_height="175dp"
+            android:layout_gravity="bottom|end"
+            android:fadingEdge="horizontal"
+            android:padding="5sp"
+            app:cardBackgroundColor="@color/prime_blue"
+            app:cardCornerRadius="10dp">
+
+            <TextView
+                android:id="@+id/txtExpenseSum"
+                android:layout_width="145dp"
+                android:layout_height="wrap_content"
+
+                android:layout_gravity="center_horizontal"
+                android:fontFamily="@font/roboto_regular"
+                android:gravity="center_horizontal"
+                android:paddingTop="8sp"
+                android:textColor="@color/white"
+                android:textSize="22sp" />
+        </androidx.cardview.widget.CardView>
+    </androidx.cardview.widget.CardView>
+
+    <ImageButton
+        android:id="@+id/btnAddTrip"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_gravity="center_vertical"
+        android:layout_marginBottom="36dp"
+        android:background="@drawable/circle_button"
+        android:contentDescription="@string/add_a_trip"
+        android:src="@drawable/ic_action_name"
+        android:text="@string/add_trip"
+        app:layout_constraintBottom_toTopOf="@+id/bottomNav"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.998" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/add_trip_here"
+        app:layout_constraintBottom_toTopOf="@+id/btnAddTrip"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardView"
+        app:layout_constraintVertical_bias="0.869" />
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNav"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        app:itemBackground="@color/prime_blue"
+        app:itemIconTint="@drawable/selector"
+        app:itemTextColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:menu="@menu/bottom_nav_menu" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

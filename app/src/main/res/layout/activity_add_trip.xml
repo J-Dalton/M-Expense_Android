@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/lnLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/addTripToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/prime_blue"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:titleTextColor="@color/white" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="36sp"
+        android:gravity="center"
+        android:text="@string/auto_location"
+        android:textSize="18sp"
+        android:translationY="20sp" />
+
+    <RadioGroup
+        android:id="@+id/rgLocation"
+        android:layout_width="match_parent"
+        android:layout_height="50sp"
+        android:translationY="20sp">
+
+        <RadioButton
+            android:id="@+id/rbLocationNo"
+            android:layout_width="93sp"
+            android:layout_height="50sp"
+            android:checked="true"
+            android:contentDescription="@string/no_risk"
+            android:text="@string/radio_no"
+            android:translationX="110sp" />
+
+        <RadioButton
+            android:id="@+id/rbLocationYes"
+            android:layout_width="98sp"
+            android:layout_height="50sp"
+            android:layout_gravity="end"
+            android:contentDescription="@string/yes_risk"
+            android:text="@string/radio_yes"
+            android:translationX="-90sp"
+            android:translationY="-50sp" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/txtRisk"
+        android:layout_width="wrap_content"
+        android:layout_height="36sp"
+        android:gravity="center"
+        android:text="@string/risk_a"
+        android:textSize="18sp"
+        android:translationY="20sp" />
+
+    <RadioGroup
+        android:id="@+id/rgRisk"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:translationY="20sp">
+
+        <RadioButton
+            android:id="@+id/rbRiskNo"
+            android:layout_width="93dp"
+            android:layout_height="50sp"
+            android:checked="true"
+            android:text="@string/radio_no"
+            android:translationX="110sp" />
+
+        <RadioButton
+            android:id="@+id/rbRiskYes"
+            android:layout_width="98dp"
+            android:layout_height="50sp"
+            android:layout_gravity="end"
+            android:text="@string/radio_yes"
+            android:translationX="-90sp"
+            android:translationY="-50sp" />
+
+    </RadioGroup>
+
+    <EditText
+        android:id="@+id/edtxtTripName"
+        android:layout_width="280sp"
+        android:layout_height="60sp"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="@string/trip_name_hint"
+        android:importantForAutofill="no"
+        android:inputType="textPersonName"
+        android:maxLength="20"
+        android:translationY="30sp" />
+
+    <EditText
+        android:id="@+id/edtxtBudget"
+        android:layout_width="280sp"
+        android:layout_height="60sp"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="@string/budget"
+        android:importantForAutofill="no"
+        android:inputType="number"
+        android:maxLength="4"
+        android:translationY="30dp" />
+
+    <EditText
+        android:id="@+id/edtxtDestination"
+        android:layout_width="280sp"
+        android:layout_height="60sp"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="@string/destination_hint"
+        android:importantForAutofill="no"
+        android:inputType="textPersonName"
+        android:maxLength="75"
+        android:translationY="30sp" />
+
+    <EditText
+        android:id="@+id/edtxtDate"
+        android:layout_width="280sp"
+        android:layout_height="60sp"
+        android:ems="10"
+        android:focusable="false"
+        android:gravity="center"
+        android:hint="@string/date_hint"
+        android:importantForAutofill="no"
+        android:inputType="date"
+        android:translationY="30sp" />
+
+    <EditText
+        android:id="@+id/edtxtDescription"
+        android:layout_width="280sp"
+        android:layout_height="100sp"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="@string/description_hint"
+        android:importantForAutofill="no"
+        android:inputType="textMultiLine"
+        android:maxLength="100"
+        android:translationY="30sp" />
+
+    <Button
+        android:id="@+id/btnInsertTrip"
+        android:layout_width="250sp"
+        android:layout_height="wrap_content"
+        android:text="@string/add_trip"
+        android:translationY="60sp" />
+
+
+</LinearLayout>

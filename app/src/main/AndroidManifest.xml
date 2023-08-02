@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.M_Expense"
+        tools:targetApi="31">
+
+        <activity
+            android:name=".SplashScreenActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".MainActivity"
+            android:exported="true" />
+        <activity
+            android:name=".HomeActivity"
+            android:exported="true"
+            android:label="@string/home" />
+        <activity
+            android:name=".CreateAccountActivity"
+            android:exported="true"
+            android:label="@string/create_account" />
+        <activity
+            android:name=".AddTripActivity"
+            android:exported="true"
+            android:label="@string/add_a_trip" />
+        <activity
+            android:name=".ViewTripActivity"
+            android:exported="true"
+            android:label="@string/view_trips" />
+        <activity
+            android:name=".ViewExpenseActivity"
+            android:exported="true"
+            android:label="@string/view_expenses" />
+        <activity
+            android:name=".EditTripActivity"
+            android:exported="true"
+            android:label="@string/edit_trip_details" />
+        <activity
+            android:name=".TripOptionsActivity"
+            android:exported="true"
+            android:label="@string/trip_options" />
+        <activity
+            android:name=".AddExpenseActivity"
+            android:exported="true"
+            android:label="@string/add_expense" />
+        <activity
+            android:name=".ProfileActivity"
+            android:exported="true"
+            android:label="@string/your_profile" />
+        <activity
+            android:name=".ExpenseOptionsActivity"
+            android:exported="true"
+            android:label="@string/expense_options" />
+        <activity
+            android:name=".EditExpenseActivity"
+            android:exported="true"
+            android:label="@string/edit_expense" />
+        <activity
+            android:name=".SearchActivity"
+            android:exported="true"
+            android:label="@string/search_title"
+            android:windowSoftInputMode="adjustNothing" />
+    </application>
+
+</manifest>

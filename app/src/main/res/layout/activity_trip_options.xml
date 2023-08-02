@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/constrLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/tripOptionsToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:titleTextColor="@color/white" />
+
+    <TableLayout
+        android:id="@+id/tableLayout"
+        android:layout_width="0dp"
+        android:layout_height="244dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="55dp"
+        android:padding="10sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/lblBudget"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingStart="5sp"
+                android:paddingTop="5sp"
+                android:paddingEnd="5sp"
+                android:text="@string/budget_semi"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/tvBudget"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:fontFamily="@font/roboto_light"
+                android:paddingStart="5sp"
+                android:paddingTop="5sp"
+                android:paddingEnd="5sp"
+                android:textColor="@color/teal_700"
+                android:textSize="16sp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="310dp"
+            android:layout_height="55dp">
+
+            <TextView
+                android:id="@+id/lblTripName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingStart="5sp"
+                android:paddingTop="5sp"
+                android:paddingEnd="5sp"
+                android:text="@string/trip_name"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/tvTripNameDisplay"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:fontFamily="@font/roboto_light"
+                android:paddingStart="5sp"
+                android:paddingTop="5sp"
+                android:paddingEnd="5sp"
+                android:textColor="@color/teal_700"
+                android:textSize="16sp"
+                tools:layout_editor_absoluteX="174dp"
+                tools:layout_editor_absoluteY="84dp" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="310sp"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/lblDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingStart="5sp"
+                android:paddingTop="5sp"
+                android:paddingEnd="5sp"
+                android:text="@string/date"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/tvDateDisplay"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+
+                android:fontFamily="@font/roboto_light"
+                android:paddingStart="5sp"
+                android:paddingTop="5sp"
+                android:paddingEnd="5sp"
+                android:textColor="@color/teal_700"
+                android:textSize="16sp"
+                tools:layout_editor_absoluteX="176dp"
+                tools:layout_editor_absoluteY="188dp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="310dp"
+            android:layout_height="40dp">
+
+            <TextView
+                android:id="@+id/lblDest"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingStart="5sp"
+                android:paddingTop="5sp"
+                android:paddingEnd="5sp"
+                android:text="@string/destination"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/tvDestinationDisplay"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:fontFamily="@font/roboto_light"
+
+                android:paddingStart="5sp"
+                android:paddingTop="5sp"
+                android:paddingEnd="5sp"
+                android:textColor="@color/teal_700"
+                android:textSize="16sp"
+                tools:layout_editor_absoluteX="176dp"
+                tools:layout_editor_absoluteY="147dp" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="310dp"
+            android:layout_height="40dp">
+
+            <TextView
+                android:id="@+id/lblExpenseNum"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingStart="5sp"
+                android:paddingTop="5sp"
+                android:paddingEnd="5sp"
+                android:text="@string/total_expenses"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/tvExpenseNum"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:fontFamily="@font/roboto_light"
+                android:paddingStart="5sp"
+                android:paddingTop="5sp"
+                android:paddingEnd="5sp"
+                android:textColor="@color/teal_700"
+                android:textSize="16sp"
+                tools:layout_editor_absoluteX="176dp"
+                tools:layout_editor_absoluteY="242dp" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="310dp"
+            android:layout_height="40dp">
+
+            <TextView
+                android:id="@+id/lblRisk"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingStart="5sp"
+                android:paddingTop="5sp"
+                android:paddingEnd="5sp"
+                android:text="@string/risk"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/tvRiskDisplay"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:fontFamily="@font/roboto_light"
+                android:paddingStart="5sp"
+                android:paddingTop="5sp"
+                android:paddingEnd="5sp"
+                android:textColor="@color/teal_700"
+                android:textSize="16sp" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="310dp"
+            android:layout_height="40dp">
+
+            <TextView
+                android:id="@+id/lblDesc"
+                android:layout_width="115dp"
+                android:layout_height="60dp"
+                android:paddingStart="5sp"
+                android:paddingTop="5sp"
+                android:paddingEnd="5sp"
+                android:text="@string/description"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/tvDescriptionDisplay"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:fontFamily="@font/roboto_light"
+                android:paddingStart="5sp"
+                android:paddingTop="5sp"
+                android:paddingEnd="5sp"
+                android:textColor="@color/teal_700"
+                android:textSize="16sp"
+                tools:layout_editor_absoluteX="176dp"
+                tools:layout_editor_absoluteY="242dp" />
+
+        </TableRow>
+
+    </TableLayout>
+
+    <Button
+        android:id="@+id/btnEditOption"
+        android:layout_width="164dp"
+        android:layout_height="74dp"
+        android:layout_below="@+id/btnViewExpensesOption"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="center"
+        android:text="@string/edit_trip_details"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.886"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tableLayout"
+        app:layout_constraintVertical_bias="0.279" />
+
+    <Button
+        android:id="@+id/btnViewExpensesOption"
+        android:layout_width="165dp"
+        android:layout_height="74dp"
+        android:layout_alignParentStart="true"
+        android:layout_gravity="center"
+        android:fontFamily="@font/roboto_bold"
+        android:text="@string/view_expenses"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.065"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tableLayout"
+        app:layout_constraintVertical_bias="0.284" />
+
+    <Button
+        android:id="@+id/btnDeleteOption"
+        android:layout_width="120sp"
+        android:layout_height="58dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="center"
+        android:text="@string/delete_trip"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.903"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tableLayout"
+        app:layout_constraintVertical_bias="0.926" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
